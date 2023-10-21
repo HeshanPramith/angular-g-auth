@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-b0c3f": {
+      "hosting": {
+        "Angular-Google": [
+          "angular-b0c3f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-b0c3f"
+  }
+}

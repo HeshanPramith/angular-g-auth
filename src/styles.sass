@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap')
+
+body
+    font-family: 'Noto Sans', sans-serif
+    font-size: 12px
+    padding-top: 60px
+
+li, a
+    font-size: 12px
+
+header
+
+    .emp-logo
+        width: 300px
+        max-width: 100%
+        text-align: center
+        position: relative
+
+        .framer
+            position: absolute
+            background: #FFFFFF
+            border-radius: 0 0 70px 70px
+            width: 100%
+            top: -27px
+            left: 0
+            padding: 12px 0
+            box-shadow: inset 0px -5px 11px -3px #a700007a
+
+            img
+                height: 20px
+
+    .dropdown-menu
+        right: 0px !important
+        width: auto !important
+        padding: 0 !important
+        left: auto !important
+
+        .dropdown-divider
+            margin: 3px 0 !important
+
+        li
+            a
+                border-radius: 5px
+                padding-left: 10px !important
+                padding-right: 10px !important
+                color: #000000
+
+                span
+                    margin-right: 5px
+                    font-size: 22px
+
+        img
+            width: 80px
+            border-radius: 100%
+            margin-bottom: 10px
+            box-shadow: 0px 0px 6px 0px #b1b1b1
+            border: solid 3px #FFFFFF
+            margin-top: 10px
+        
+        p
+            font-weight: 600
+
+.offcanvas
+    max-width: 300px !important
+
+.navbar
+    padding: 5px 0 !important
+    background: #a70000
+    box-shadow: 0px -3px 4px 3px #c3c3c3
+
+    .container-fluid
+        justify-content: space-between
+
+    h1
+        font-size: 20px
+        color: #ffffff
+        margin: 0
+        float: left
+        position: relative
+        top: -2px
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important
+        font-weight: 600
+
+.navbar-toggler
+    border: none
+    padding: 0 !important
+    height: 24px
+    outline: none !important
+    color: #ffffff
+    box-shadow: none !important
+    margin-right: 15px
+    float: left
+
+    &:focus
+        outline: none !important
+
+    &:hover
+        outline: none !important
+
+.user-block
+    float: right
+
+    .btn
+        color: #FFFFFF !important
+
+    .user-block-inner
+
+        img
+            border-radius: 100%
+            width: 35px
+            margin: 0 10px 0 0
+
+        span
+            font-size: 12px
+            font-weight: 500
+            color: #FFFFFF
+
+.signout
+    background: none !important
+
+button
+    border: none !important
+    outline: none !important
+    box-shadow: none !important
+
+    &:focus
+        outline: none !important
+        border: none !important
+
+    &:hover
+        outline: none !important
+        border: none !important
+
+    &:active
+        outline: none !important
+        border: none !important
+
+.form-control
+    outline: none !important
+    box-shadow: none !important
+    font-size: 12px
+
+    &:focus
+        outline: none !important
+
+    &:hover
+        outline: none !important
+
+    &:active
+        outline: none !important
+
+@media screen and (max-width: 768px)
+
+    .user-block-name, .emp-logo
+        display: none
+
+    .user-block
+        
+        .user-block-inner
+            
+            img
+                margin: 0
+    
