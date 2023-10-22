@@ -10,6 +10,10 @@ import { map } from 'rxjs';
   styleUrls: ['./login.component.sass'],
 })
 export class LoginComponent {
+
+  username: string = '';
+  password: string = '';
+
   user$ = this.angularAuth.authState.pipe(map((user) => user));
 
   constructor(private angularAuth: AngularFireAuth, private router: Router) {}

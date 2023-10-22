@@ -1,15 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
 
 body
-    font-family: 'Noto Sans', sans-serif
+    font-family: 'Roboto', sans-serif
     font-size: 12px
+    background: #ebebeb
+
+.wrapper
     padding-top: 60px
+
+.log-bg
+    background: #FFFFFF
+
+    .bg
+        background: url('assets/img/login_bg.jpg') center center no-repeat
+        background-size: cover
+        border-radius: 20px
+        border: solid 10px #FFFFFF
 
 li, a
     font-size: 12px
 
+
+::-webkit-scrollbar
+    width: 5px
+    background: linear-gradient(0deg, #ebebeb 0%, #ffffff 100%)
+    border-radius: 10px
+
+::-webkit-scrollbar-track
+    border-radius: 10px
+
+::-webkit-scrollbar-thumb
+    background: #7c7c7c
+    border-radius: 10px
+
+::-webkit-scrollbar-thumb:hover 
+    background: #ba0000
+
+label
+    font-size: 12px
+    line-height: normal !important
+    font-weight: 500
+    color: #494949
+
+input
+    font-size: 12px !important
+
+.mdc-list-item
+
+    span
+        font-size: 12px !important
+
+.fa-regular
+    margin-right: 5px
+
+.fa-file-pdf
+    color: #db0000
+    font-size: 16px
+
+.mat-mdc-table
+    font-size: 12px
+    background: none !important
+
+    tr
+        font-size: 12px
+        height: auto !important
+        background: none
+        border: none
+        transition: all .4s
+
+        &:hover
+
+            td
+                background: #dadada
+                transition: all .4s
+
+        th
+            background: none
+            background: #333333 !important
+            color: #FFFFFF
+            padding-top: 8px
+            padding-bottom: 8px
+
+        td
+            padding-top: 5px
+            padding-bottom: 5px
+            font-size: 12px
+            background: none
+            border: none
+            border-bottom: solid 1px #ebebeb
+            transition: all .4s
+
+            i
+                margin-right: 10px
+
+            a
+                color: #0065c4
+                font-weight: 500
+
+.mat-mdc-select
+
+    .mat-mdc-select-value-text
+        font-size: 12px !important
+        color: #000000
+
+.mat-mdc-form-field
+
+    .mat-mdc-form-field-focus-overlay
+        background: none !important
+
+    .mat-mdc-text-field-wrapper
+        padding: 0 !important
+        background: none !important
+
+    .mat-mdc-form-field-infix
+        padding-bottom: 0 !important
+        padding-top: 0 !important
+
+.fader-none
+
+    &::after
+        display: none !important
+
+.barchart
+    height: calc( 100vh - 440px ) !important
+    display: inline-block !important
+
+.card
+    background: rgb(255,255,255)
+    background: linear-gradient(0deg, #ebebeb 0%, #ffffff 100%)
+    border: none
+    position: relative
+
+    &::after
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        content: ""
+        height: 80px
+        background: rgb(255,255,255)
+        background: linear-gradient(0deg, #ebebeb 0%, #ebebeb00 100%)
+        pointer-events: none
+
+    &.vaclist
+
+        .card-body
+            
+            ul
+                
+                li
+                    &:hover
+                        
+                        span
+                            background: #114fc2 !important
+                            transition: all .4s
+                            color: #FFFFFF
+
+    .card-header
+        background: none
+        border: none
+        border-bottom: solid 1px #e2e2e2
+        font-size: 14px
+        font-weight: 500
+
+    .card-body
+        max-height: 250px
+        overflow: auto
+        padding-top: 0
+
+        &.cb-m-h
+            max-height: calc( 100vh - 130px ) !important
+            min-height: calc( 100vh - 130px ) !important
+
+        &.cb-h-a
+            max-height: none !important
+            min-height: auto !important
+
+        ul
+            background: none
+            border: none
+
+            li
+                background: none
+                border: none
+                border-bottom: solid 1px #ebebeb
+                padding: 7px 10px 7px 0
+                transition: all .4s
+                cursor: pointer
+                color: #666666
+                font-size: 12px
+                border-radius: 0
+
+                span
+                    transition: all .4s
+                    background: #e4e4e4 !important
+                    color: #4b4b4b
+                    width: 30px
+                    height: 30px
+                    font-size: 12px
+                    font-weight: 600
+
+                &:hover
+                    background: #EEEEEE
+                    transition: all .4s
+                    padding: 7px 10px 7px 10px
+                    color: #474747
+                    font-weight: 600
+
+                    span
+                        background: #11c246 !important
+                        transition: all .4s
+                        color: #FFFFFF
+
 .offcanvas
     max-width: 300px !important
+
+    .offcanvas-body
+        padding: 0
+
+        ul
+            padding: 0 !important
 
 header
 
@@ -51,7 +261,7 @@ header
             margin-bottom: 10px
             box-shadow: 0px 0px 6px 0px #b1b1b1
             border: solid 3px #FFFFFF
-            margin-top: 10px
+            margin-top: 20px
         
         p
             font-weight: 600
@@ -59,9 +269,30 @@ header
     .navbar
         padding: 5px 0 !important
         box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.10), inset 0 -1px 0 rgba(255,255,255,0.15)
+        background: #FFFFFF
 
         .container-fluid
             justify-content: space-between
+
+        li
+            transition: all .4s
+
+            a
+                padding: 10px 15px
+                color: #000000
+                font-weight: 500
+                letter-spacing: 0.03rem
+                transition: all .4s
+
+            &:hover
+                background: #dadada
+                transition: all .4s
+
+            &.active
+
+                a
+                    color: #FFFFFF
+                    background: #ba0000
  
         h1
             font-size: 28px
@@ -80,9 +311,11 @@ header
             .tag
                 float: left
                 font-size: 9px
-                color: #000000
+                color: #686868
                 font-weight: normal
-                word-spacing: 1px
+                word-spacing: 0.05rem
+                letter-spacing: 0.04rem
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
 
         .navbar-toggler
             border: none
@@ -94,7 +327,7 @@ header
             margin-right: 15px
             float: left
             position: relative
-            top: 10px
+            top: 5px
 
             &:focus
                 outline: none !important
@@ -172,4 +405,18 @@ button
             
             img
                 margin: 0
+
+    .barchart
+        height: auto !important
+
+    .card
+
+        &::after
+            display: none
+        
+        .card-body
+            
+            &.cb-m-h
+                max-height: none !important
+                min-height: auto !important
     
