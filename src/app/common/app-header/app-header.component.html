@@ -5,14 +5,22 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
-                <h1>topjobs</h1>
+                <h1 class="d-flex flex-column"><span class="mtag">topjobs</span> <span class="tag">careers jobs recruitments</span></h1>
             </div>
             <div class="emp-logo">
                 <div class="framer">
                     <img src="https://www.masholdings.com/wp-content/themes/mas-holdings/assets/images/mas.png" class="img-fluid" alt="Employer Logo"/>
                 </div>
             </div>
-            <div class="user-block">
+            <div class="user-block d-flex">
+                <div class="position-relative notification">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                    <span class="position-absolute top-0 start-100 translate-middle bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
+                    </span>
+                </div>
                 <div *ngIf="user$ | async as user">
                     <div class="btn-group">
                         <button class="btn btn-sm user-block-inner" type="button">
